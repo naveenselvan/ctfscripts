@@ -28,3 +28,9 @@ Buffer Size :44bytes
 Base Pointer:4bytes
 Return Address:4 bytes
 So The Offset is 52 
+
+
+
+gdb-peda$ p 0x2c+0x8
+$3 = 0x34
+0x32=52(Decimal)
