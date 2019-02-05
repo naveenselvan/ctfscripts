@@ -2,7 +2,7 @@ from pwn import *
 
 context(arch='i386', os='linux')
 
-#p = process('./your_name', stdout=PIPE)
+#p = process('./cheating', stdout=PIPE)
 p= remote("13.232.171.97","6789")
 p.recvuntil("It is very powerful also")
 
