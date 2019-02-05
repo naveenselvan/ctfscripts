@@ -1,5 +1,5 @@
 #BOF-pwnable.kr :)
-
+#This contains two methods. First One is Brute-Force ! Second One is actual Way
 from pwn import *
 
 
@@ -17,7 +17,7 @@ for i in range(32,133):
                 break
                 
                 
-#Below is comment Secion:Right Solution Without Bruteforce                
+#Right Solution Without Bruteforce                
                         lea    eax,[ebp-0x2c]
    0x0000064c <+32>:    mov    DWORD PTR [esp],eax
    0x0000064f <+35>:    call   0x650 <func+36>
