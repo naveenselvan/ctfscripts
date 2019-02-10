@@ -1,2 +1,0 @@
-inctf{welc0me_t0_AES_ECB_basic_crypto}
-									
