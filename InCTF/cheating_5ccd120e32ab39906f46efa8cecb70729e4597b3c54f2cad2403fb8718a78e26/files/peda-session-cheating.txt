@@ -1,0 +1,4 @@
+break * 0x0804927c
+break * authenticate
+break * 0x8049254
+
