@@ -26,18 +26,21 @@ for i in range(32,133):
 
 Buffer Size :44bytes
 Base Pointer:4bytes
-Return Address:4 bytes
-So The Offset is 52 
+Now we are in ebp <--
+Check is at DWORD PTR [ebp+0x8]  so add 4 bytes junk <--
+So The Offset is 52  
+The value affter offset 52  will be ebp+0x8. This check will satisify
 
-|-------------------------------------| High address
+|-------------------------------------| 
 |       Stack                         |
 |-------------------------------------|
-|      int key                        | 
+|  Main Function                      |                                          
+|   int key                           | -------------------------->$ebp+0x8 Check Made
 |-------------------------------------|
-|    return address-offset 4          | 
-|    EBP-offset 4                     |
+|    return address-offset 4  bytes   | --------------------------->Return Address
+|    push EBP-offset 4 bytes          |---------------------------> $ebp
 |-------------------------------------|
-|    overflowme[32] -offset 44        | 
+|    overflowme[32] -offset 44        | --------------------------->$ebp-0x2c Buffer Location
 |-------------------------------------|
 
 gdb-peda$ p 0x2c+0x8
