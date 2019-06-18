@@ -12,6 +12,15 @@ print(decrypt)
 
 
 
+#####
+
+def XORI(enc_message,key):
+    dec_message = ""
+    for i in range(len(enc_message)):
+        dec_message = dec_message + chr(ord(enc_message[i])^ord(key[(lambda x,y:x%y if x%y >=0 else y)(i,len(key))]))
+    return dec_message
+
+
 
 
 
