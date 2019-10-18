@@ -13,6 +13,9 @@ z3_solver.add( s[2] + 4 == s[5] )
 z3_solver.add( s[4] + 2 == s[2] )
 z3_solver.add((s[3] ^ 0x72) == 0)
 
+#0 1 2 3 4 5
+#s t o r m s
+
 
 if z3_solver.check() == sat:
 	sol = z3_solver.model()
