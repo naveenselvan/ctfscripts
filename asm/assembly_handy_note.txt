@@ -1,3 +1,4 @@
-lods b/w/d - al/ax/eax loaded from esi
-stos b/w/d - al/ax/eax stored in edi
+lods b/w/d - al/ax/eax loaded from ESI
+stos b/w/d - al/ax/eax stored in EDI
 movs b/w/d - al/ax/eax ESI Pointed Value Stored in EDI
+scas b/w/d - al/ax/eax value scanned -> EDI
