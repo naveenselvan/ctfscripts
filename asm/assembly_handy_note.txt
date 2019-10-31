@@ -1,0 +1,3 @@
+lods b/w/d - al/ax/eax loaded from esi
+stos b/w/d - al/ax/eax stored in edi
+movs b/w/d - al/ax/eax ESI Pointer Stored in EDI
