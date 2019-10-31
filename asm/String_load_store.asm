@@ -1,6 +1,6 @@
 global main
 section .data
-source  db "PLaying With Strings",0
+source  db "PLay With Strings",0
 len equ $-source
 
 section .bss
