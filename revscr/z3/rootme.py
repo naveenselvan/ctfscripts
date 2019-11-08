@@ -1,3 +1,4 @@
+#NOte: I am not the Author
 from z3 import *
 
 s = [BitVec("s[%d]" %i,7 )for i in range(0,6)]
