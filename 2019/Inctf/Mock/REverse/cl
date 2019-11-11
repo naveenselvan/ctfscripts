@@ -1,0 +1,6 @@
+__libc_start_main(0x400646, 1, 0x7ffec3907ca8, 0x4006e0 <unfinished ...>
+printf("Guess the Flag:")                                                                                                     = 15
+__isoc99_scanf(0x400778, 0x7ffec3907b90, 0, 0)                                                                                = 1
+strcmp("inctfj{l1nux_c0mm4nd5_4r3_4w350m"..., "a")                                                                            = 8
+printf("Incorrect")                                                                                                           = 9
++++ exited (status 0) +++
