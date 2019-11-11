@@ -1,3 +1,3 @@
 # CTF Scripts
 
-### Offensive Security- Play with the payloads !
+### Offensive Security- Play Around !
