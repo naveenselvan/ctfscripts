@@ -13,23 +13,23 @@ for i in source:
     index+=1
 
 
-the_string = crypt_code
+cipher = crypt_code
 
-possibleset = string.ascii_letters + string.digits + "_@!?-{}"
+ascii_set = string.ascii_letters + string.digits + "_@!?-{}"
 
 
 
-for hashind in range(4):
+for index in range(4):
     print("-----------------")
     key=[]
-    for p in possibleset:     #Iterate through Strings of 0,1,3,4
-        testsol = ord(the_string[hashind]) ^ ord(p)  #Xor The string Index With P, First four letters are already tested
-        for j in range(hashind + 4, len(the_string), 4):     #Iterate Through Particular Index Of the The String  
-            if chr(testsol ^ ord(the_string[j])) not in possibleset:  #If it not Present in the Printable Ascii Range Exit from the loop ensure it matches with the appropriate index
+    for ascii_range in ascii_set:     #Iterate through Strings of 0,1,3,4
+        possible_key = ord(cipher[index]) ^ ord(ascii_range)  #Xor The string Index With ascii_range, First four letters are already tested
+        for j in range(index + 4, len(cipher), 4):     #Iterate Through Particular Index Of the The String  
+            if chr(possible_key ^ ord(cipher[j])) not in ascii_set:  #If it not Present in the Printable Ascii Range Exit from the loop ensure it matches with the appropriate index
                 break
         else:
-            print(testsol)
-            key.append(testsol)
+            print(possible_key)
+            key.append(possible_key)
     print(key)
     print("-----------------")
 
@@ -56,7 +56,6 @@ for list in itertools.product(*l1):
     #index=index+1
     temp=crypt(crypt_code, list)
     if 'inctf{' in temp:
-        print(temp)
         print(temp)
 
 
