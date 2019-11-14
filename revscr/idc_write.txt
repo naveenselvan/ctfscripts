@@ -1,0 +1,2 @@
+Patch Byte
+https://www.pwndiary.com/write-ups/xiomara-ctf-2018-slammer-write-up-reverse200/
