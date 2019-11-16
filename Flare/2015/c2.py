@@ -5,14 +5,14 @@ def ROL(data, shift, size=32):
     return (body + remains)
 
 def flag_check(str,bx):
-    dx=bx
-    dx=dx&3
-    ah=1
-    cf=1
-    al=str^0xc7
-    ah=ROL(ah,dx)
-    al=al+ah+cf
-    bx=bx+al
+    dx=bx   #mov dx,bx
+    dx=dx&3  #and dx,3
+    ah=1     #sahf
+    cf=1     #Carry Flag is One
+    al=str^0xc7      #Xor With Hard Coded Value
+    ah=ROL(ah,dx)     #ROL ah,dx
+    al=al+ah+cf        #adc al,ah
+    bx=bx+al          #add bx,al
     return al,bx
 
 
