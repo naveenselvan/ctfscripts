@@ -14,7 +14,7 @@ def exp_write():
 bp = gdb.Breakpoint('*0x0000000000400FF5')
 bp.silent = True
 
-for i in range(len(key)):
+for i in range(len(key)): 
     for c in charset:
         key[i] = c
         exp_write()
@@ -27,6 +27,6 @@ gdb.execute('c')
 gdb.execute('q')
 
 
-#https://github.com/j3rrry/Writeups/tree/master/CTF/2017/0x00/reversing/challenge-000
+#Source- https://github.com/j3rrry/Writeups/tree/master/CTF/2017/0x00/reversing/challenge-000
 
 #gdb -x script.py ./guessme
