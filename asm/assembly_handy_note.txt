@@ -1,5 +1,5 @@
-lods b/w/d - al/ax/eax loaded from ESI  strcpy(al/ax/eax,esi)
-stos b/w/d - al/ax/eax stored in EDI    strcpy(edi,al/ax/eax)
+lods b/w/d - al/ax/eax loaded from *ESI  strcpy(*al/ax/eax,esi)
+stos b/w/d - al/ax/eax stored in *EDI    strcpy(*edi,al/ax/eax)
 movs b/w/d - MovedESI Pointed Value Stored in EDI    strcpy(edi,esi)
 scas b/w/d - al/ax/eax value scanned -> EDI    
 while(edi!=NULL)
