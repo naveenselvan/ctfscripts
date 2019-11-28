@@ -1,4 +1,7 @@
-lods b/w/d - al/ax/eax loaded from ESI
-stos b/w/d - al/ax/eax stored in EDI
-movs b/w/d - al/ax/eax ESI Pointed Value Stored in EDI
-scas b/w/d - al/ax/eax value scanned -> EDI
+lods b/w/d - al/ax/eax loaded from ESI  strcpy(al/ax/eax,esi)
+stos b/w/d - al/ax/eax stored in EDI    strcpy(edi,al/ax/eax)
+movs b/w/d - MovedESI Pointed Value Stored in EDI    strcpy(edi,esi)
+scas b/w/d - al/ax/eax value scanned -> EDI    
+while(edi!=NULL)
+     if edi == eax:
+         increment counter
