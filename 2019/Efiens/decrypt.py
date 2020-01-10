@@ -11,10 +11,10 @@ b=[]
 c=[]
 d=[]
 for i in range(im.size[1]):
-    a.append(chr(pix[0,i][3]))
-    b.append(chr(pix[0,i][0]))
-    c.append(chr(pix[0,i][1]))
-    d.append(chr(pix[0,i][2]))
+    a.append(chr(pix[0,i][3]))        #Alpha - Complementary Bit Plane
+    b.append(chr(pix[0,i][0]))        #Red
+    c.append(chr(pix[0,i][1]))        #Green
+    d.append(chr(pix[0,i][2]))        #Blue
 
 
 print("".join(a))
