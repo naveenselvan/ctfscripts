@@ -1,5 +1,6 @@
 #Source:https://github.com/ironore15/ctf/blob/master/2020-HackIM/returminator/solve.py
 
+#One more Good Solution https://github.com/nullcon/hackim-2020/tree/master/re/returminator/solution
 #!/usr/bin/python3
 import pwn
 import z3
