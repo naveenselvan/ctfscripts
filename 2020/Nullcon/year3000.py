@@ -1,4 +1,4 @@
-#Few line Optimized from https://x3ero0.tech/posts/year3000/
+#Few line Optimized from https://x3ero0.tech/posts/year3000/ without disasm
 
 import base64
 import sys
