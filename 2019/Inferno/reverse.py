@@ -1,3 +1,4 @@
+#Source:https://github.com/ByteBandits/writeups/blob/master/inferno-ctf-2019/rev/darkcrackme/exp.py
 def rev_bs(s) -> int:
     return ~int(s, 2) & 0xf
 
