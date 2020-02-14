@@ -2,7 +2,6 @@ from itertools import chain, product
 
 cipher = "1_4m_th3_wh1t3r0s3"
 
-flag = ['*']* 0x24
 s1 = "ADGJLQETUOZCBM10"
 s2 = "sfhkwryipxvn5238"
 
