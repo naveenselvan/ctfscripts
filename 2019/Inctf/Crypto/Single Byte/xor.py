@@ -5,7 +5,7 @@ str1 = binascii.unhexlify(input_string)
 
 
 fl=''
-for i in str1:
+for i in str1.decode():
 	fl+=chr(ord(i)^ord('z'))
 
 
